@@ -19,10 +19,10 @@
  * Time: 14:48
  */
 
-namespace mrcnpdlk\Teryt;
+namespace silksoftwarehouse\Teryt;
 
 
-use mrcnpdlk\Teryt\ResponseModel\Territory\JednostkaTerytorialna;
+use silksoftwarehouse\Teryt\ResponseModel\Territory\JednostkaTerytorialna;
 use Psr\Log\NullLogger;
 
 class ClientTest extends TestCase
@@ -34,19 +34,19 @@ class ClientTest extends TestCase
 
     public function testEmptyLogger()
     {
-        $oClient = new \mrcnpdlk\Teryt\Client();
+        $oClient = new \silksoftwarehouse\Teryt\Client();
         $this->assertInstanceOf(NullLogger::class, $oClient->getLogger());
     }
 
     public function testEmptyCache()
     {
-        $oClient = new \mrcnpdlk\Teryt\Client();
+        $oClient = new \silksoftwarehouse\Teryt\Client();
         $this->assertInstanceOf(NullLogger::class, $oClient->getLogger());
     }
 
     public function testGetProvinces()
     {
-        $oClient    = new \mrcnpdlk\Teryt\Client();
+        $oClient    = new \silksoftwarehouse\Teryt\Client();
         $oNativeApi = NativeApi::create($oClient);
         $tList      = $oNativeApi->PobierzListeWojewodztw();
         $this->assertNotEmpty($tList);

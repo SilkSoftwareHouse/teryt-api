@@ -18,6 +18,9 @@
 
 # TERYT WS1 API - Polish address database
 
+Based on the work of Marcin Pudełek (https://github.com/mrcnpdlk/teryt-api)
+Modified for PHP 5.6.x compatibility.
+
 ## Installation
 
 Install the latest version with [composer](https://packagist.org/packages/mrcnpdlk/teryt-api)

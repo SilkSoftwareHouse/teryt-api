@@ -19,7 +19,7 @@
  * Time: 19:59
  */
 
-namespace mrcnpdlk\Teryt;
+namespace silksoftwarehouse\Teryt;
 
 class HelperTest extends TestCase
 {

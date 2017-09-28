@@ -19,23 +19,23 @@
  * Time: 14:42
  */
 
-namespace mrcnpdlk\Teryt;
+namespace silksoftwarehouse\Teryt;
 
 class ConnectionTest extends TestCase
 {
     public function testConnect()
     {
-        $oClient    = new \mrcnpdlk\Teryt\Client();
+        $oClient    = new \silksoftwarehouse\Teryt\Client();
         $oNativeApi = NativeApi::create($oClient);
         $this->assertEquals(true, $oNativeApi->CzyZalogowany());
     }
 
     /**
-     * @expectedException \mrcnpdlk\Teryt\Exception\Connection
+     * @expectedException \silksoftwarehouse\Teryt\Exception\Connection
      */
     public function testInvalidAuth()
     {
-        $oClient = new \mrcnpdlk\Teryt\Client();
+        $oClient = new \silksoftwarehouse\Teryt\Client();
         $oClient->setConfig('invaliduser', 'invalidpassword',false);
         $oNativeApi = NativeApi::create($oClient);
         $oNativeApi->PobierzListeWojewodztw();

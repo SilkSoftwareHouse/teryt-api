@@ -19,9 +19,9 @@
  * Time: 20:12
  */
 
-namespace mrcnpdlk\Teryt;
+namespace silksoftwarehouse\Teryt;
 
-use mrcnpdlk\Teryt\Model\Terc;
+use silksoftwarehouse\Teryt\Model\Terc;
 
 class TercTest extends TestCase
 {
